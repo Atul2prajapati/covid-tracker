@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,700;1,300&display=swap" rel="stylesheet"> 
+<title>Covid-19</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1   class="coronaText">COVID 19</h1>
+            <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-coronavirus-coronavirus-justicon-flat-justicon.png"/>
+        </div>
+        <span class="search">
+                  <input  class="search-tool" type="text" placeholder="Search your district or state" >
+                  <!-- <div class="values">
+                <div class="head"></div>
+                 <div class="col"><h2>123</h2></div>
+                 <div class="col"><h2>234</h2></div>
+                 <div class="col"><h2>3445</h2></div>
+                 <div class="col"><h2>546</h2></div>
+                 <div class="col"><h2>45456</h2></div>  
+            </div>      -->
+        </span>
+
+            <div class="search-btn">
+                           <svg  id ="search-btn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+              
+             </div>
+        </div>
+        <div class="global-cont">
+            <div class="typing">
+                Global
+              </div>
+              <div class="glo-col ">
+                <h2>Deaths</h2>
+                <p id="deaths"> &nbsp;230</p>
+            </div> 
+            <div class=" glo-col ">
+                <h2>Total Cases</h2>
+                <p id="total">430</p>
+            </div>
+            <div class="glo-col ">
+                <h2>Recovered</h2>
+                <p id="recover">&nbsp; 100</p>
+            </div>
+            <div class="glo-col ">
+                <h2>Tested</h2>
+                <p id="tested"> &nbsp;230</p>
+            </div>
+        </div>
+        <div class="india-cont">
+            <div class="typing">
+                India
+              </div>
+            <div class=" glo-col ">
+                <h2>Total Cases</h2>
+                <p id="in-total">430</p>
+                <h5>&nbsp;</h5>
+            </div>
+            <div class="glo-col ">
+                <h2 >Active Cases</h2>
+                <p id="in-active">&nbsp; 100</p>
+                <h5 id="in-newactive"></h5>
+            </div>
+           
+            <div class="glo-col ">
+                <h2>Recovered</h2>
+                <p id="in-recover" >&nbsp; 100</p>
+                <h5 id="in-newrecover"></h5>
+            </div>
+            <div class="glo-col ">
+                <h2>Deaths</h2>
+                <p id ="in-death"> &nbsp;230</p>
+                <h5 id="in-newdeath"></h5>
+            </div>
+        </div>
+        
+        <div class="table"  id="table">
+           <div class="head"></div>
+                <div class="col"><h2>State</h2></div>
+                <div class="col"><h2>Total Infected</h2></div>
+                <div class="col"><h2>Active Cases</h2></div>
+                <div class="col"><h2>Recovered Cases</h2></div>
+                <div class="col"><h2>Deaths</h2></div>
+            </div>
+            <!----------------------row Area------------------------>
+            <!-- <div class="values">
+                <div class="head"></div>
+                 <div class="col"><h2>123</h2></div>
+                 <div class="col"><h2>234</h2></div>
+                 <div class="col"><h2>3445</h2></div>
+                 <div class="col"><h2>546</h2></div>
+                 <div class="col"><h2>45456</h2></div>  
+            </div>      -->
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
