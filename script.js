@@ -68,12 +68,15 @@
                             let filtered=arrData.filter((val)=>{
                                                 return val.loc.toLowerCase().includes(getdata);
                             });
+                            console.log(filtered);
+                            
                             filtered.map((val)=>{
                                 // let div = $("</div>").attr("id","ex1");
                                 // div.attr("class","modal");
                                 //     div.className ='modal';
                                     let active=val.confirmedCasesIndian-(val.deaths+val.discharged);
-                                    let div = document.createElement('div');
+                                    let div =document.querySelector(".modal");
+                                   
                                         div.innerHTML =`
                                     <div class="head"></div>
                                     <div class="col"><h2>${val.loc}</h2></div>
@@ -81,8 +84,17 @@
                                     <div class="col"><h2>${active}</h2></div>
                                     <div class="col"><h2>${val.discharged}</h2></div>
                                     <div class="col"><h2>${val.deaths}</h2></div>
-                                   `
-                                document.getElementById("table").appendChild(div);
+                                    
+                                   `;
+                                   $('.search-btn').click(function(e){
+                                       $('.modal').css({"top":"17rem","left":"22rem"});
+                                   })
+                                    
+                                    $(".modal").click(function(e){
+                                        $(this).css({"top":-200,});
+                                    })
+                                //    div.addEventListener();
+                               
                              });
                             
 

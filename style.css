@@ -32,14 +32,16 @@ body{
  }
  
  .search{
-    position: absolute;
-    height: 7%;
+    /* position: absolute; */
+    height: 43px;
     width:350px;
-    top:25%;
-    left: 500px;
+   
     display: flex;
-     box-shadow:  1px 1px 12px 2px;
+    margin:100px auto;
+    box-shadow:  1px 1px 12px 2px;
     border-radius: 50px;
+    justify-content: center;
+    align-items: center;
     
 }
 .search:hover{
@@ -62,12 +64,13 @@ body{
     width:30px;
 }
 .search-btn svg{
-     position: absolute;
+     position: relative;
     background: transparent;
+    margin: auto;
     height: 90px;
     width: 30px;
-    left:59%;
-    top:21%;
+     left:-37%;
+    top:-100%;
     color: rgba(5, 7, 7, 0.767);    
 }
 
@@ -83,7 +86,7 @@ body{
     border: 5px solid #25a55f;
     display: table;
     position: absolute;
-    margin-top:13%;
+    margin-top:8%;
     margin-left: 15%;
     border-radius: 15px;
     text-align: center;
@@ -120,10 +123,11 @@ body{
     display: table;
     width: 70%;
     position: absolute;
-    top: 85%;
-    margin-top:50px;
+    top: 95%;
+    margin-top:100px;
     margin-left: 15%;
     border-radius: 20px;
+    margin-bottom: 10px;
     text-align: center;
 }
 .india-cont:hover{
@@ -137,10 +141,6 @@ body{
     color: #b84040;
 }
 
-.typing{
-    font-size: 30px;
-    font-weight:bolder;
-}
 .table{
     position: absolute;
     top: 30%;
@@ -197,4 +197,15 @@ body{
      width: 18%;
      text-align: center;
      align-items: center;
+ }
+
+ .modal{
+     display: flex;
+     /* width: min-content; */
+     width: min-content;
+     margin:0 auto;
+     position: absolute;
+     height: min-content;
+     /* height: min-content; */
+     padding: 10px;
  }
